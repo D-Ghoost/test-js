@@ -15,14 +15,16 @@ function fibonacci(number){
     while (i < number){
         arrai.push(i);
         i+=j;
-        arrai.push(j);
+        if(j <= number) {
+            arrai.push(j);
+        }
         j+=i;
     }
     return arrai;
     
 }
-function orderNumber(){
-order.sort(function(a, b) {
+function orderNumber(arr){
+return arr.sort(function(a, b) {
         return a - b;
       });}
 
