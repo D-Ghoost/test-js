@@ -8,8 +8,8 @@ test('validate even number', () => {
 })
 
 test('create fibonacci', () => {
-     expect(module.fibonacci(20)).toBe([1,1,2,3,5,8,13]);
-     expect(module.fibonacci(60)).toBe([1,1,2,3,5,8,13,21,34,55]);
+     expect(module.fibonacci(20)).toStrictEqual([1,1,2,3,5,8,13]);
+     expect(module.fibonacci(60)).toStrictEqual([1,1,2,3,5,8,13,21,34,55]);
 })
 
 test('order list of numbers', () => {
